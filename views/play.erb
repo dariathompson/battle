@@ -1,26 +1,43 @@
-<%= @player_1_name %> vs. <%= @player_2_name %>
-<br>
-<br>
-<%= @player_1_name %>: 60HP
-<br>
-<%= @player_2_name %>: 60HP
-<br>
-<br>
+<header>
+  <div class="container">
+    <h1><%= @player_1_name %> vs. <%= @player_2_name %></h1>
+  </div>
+</header>
+
+<body>
+  <div class="container">
+    <h2><%= @player_1_name %>: 60HP</h2>
+  </div>
+  <div class="container">
+    <h2><%= @player_2_name %>: 60HP</h2>
+  </div>
+  <div class="container">
+    <a href="/attack">
+      <button class="btn">
+        Attack!
+      </button>
+    </a>
+  </div>
+</body>
+
 <style type="text/css">
-    .btn {
-        background-color: red;
-        cursor: pointer;
-        font-size: 16px;
-        border-radius: 8px;
-    }
-#     .btn:hover {
-#   background-color: #4CAF50; /* Green */
-#   color: white;
-# }
-    }
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+  }
+  .btn {
+    margin-left: auto; 
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 32px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+    align: center;
+  }
+  .btn:hover {
+    background-color: red;
+    color: white;
+  }
 </style>
-<a href="/attack">
-  <button class="btn">
-    Attack!
-  </button>
-</a>
