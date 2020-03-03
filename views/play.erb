@@ -1,5 +1,26 @@
 <%= @player_1_name %> vs. <%= @player_2_name %>
 <br>
-<%= @player_2_name%>: 60HP
 <br>
-<a href="/attack"><button>Attack!</button></a>
+<%= @player_1_name %>: 60HP
+<br>
+<%= @player_2_name %>: 60HP
+<br>
+<br>
+<style type="text/css">
+    .btn {
+        background-color: red;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+#     .btn:hover {
+#   background-color: #4CAF50; /* Green */
+#   color: white;
+# }
+    }
+</style>
+<a href="/attack">
+  <button class="btn">
+    Attack!
+  </button>
+</a>
