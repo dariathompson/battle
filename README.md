@@ -1,6 +1,18 @@
 # Battle project 
 Week 3 Makers project to better our understanding of HTTP, response-request mechanisms, Sinatra, and Capybara.
 
+How to make it work
+server: 
+```
+ruby app.rb
+```
+
+client
+```
+rackup #to find port(9292)
+```
+localhost:9292
+
 ## User stories
 ```
 As two Players,
