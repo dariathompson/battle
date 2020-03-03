@@ -9,7 +9,8 @@ ruby app.rb
 
 client
 ```
-rackup #to find port(9292)
+rackup 
+#this finds port(9292) and is needed in order to initialize the server (?)
 ```
 localhost:9292
 
