@@ -1,5 +1,3 @@
-require './app'
-
 feature 'attacking another' do
   scenario 'can attack another player and get confirmation' do
     sign_in_and_play
