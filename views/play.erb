@@ -6,10 +6,10 @@
 
 <body>
   <div class="container">
-    <h2><%= @player_1.name %>: 60HP</h2>
+    <h2><%= @player_1.name %>: <%= @player_1.hit_points%>HP</h2>
   </div>
   <div class="container">
-    <h2><%= @player_2.name %>: 60HP</h2>
+    <h2><%= @player_2.name %>: <%= @player_2.hit_points%>HP</h2>
   </div>
   <div class="container">
     <a href="/attack">
