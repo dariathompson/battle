@@ -1,15 +1,15 @@
 <header>
   <div class="container">
-    <h1><%= @player_1.name %> vs. <%= @player_2.name %></h1>
+    <h1><%= @game.player_1.name %> vs. <%= @game.player_2.name %></h1>
   </div>
 </header>
 
 <body>
   <div class="container">
-    <h2><%= @player_1.name %>: <%= @player_1.hit_points%>HP</h2>
+    <h2><%= @game.player_1.name %>: <%= @game.player_1.hit_points%>HP</h2>
   </div>
   <div class="container">
-    <h2><%= @player_2.name %>: <%= @player_2.hit_points%>HP</h2>
+    <h2><%= @game.player_2.name %>: <%= @game.player_2.hit_points%>HP</h2>
   </div>
   <div class="container">
     <a href="/attack">
