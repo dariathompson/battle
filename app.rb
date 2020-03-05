@@ -21,8 +21,17 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
+    #count = 1
     @game = $game
-    @game.attack(@game.player_2)
+    #if count.even?
+      # count += 1
+      @game.attack#@game.player_2)
+    
+    # else
+    #   count += 1
+    #   @game.attack(@game.player_1) 
+      
+    # end
     erb :attack
   end
 
