@@ -3,3 +3,8 @@
 <%= @game.not_turn.name %>: <%= @game.not_turn.hit_points %>HP
 <br>
 <a href="/play">OK</a>
+
+<% if @game.not_turn.lost == true %>
+<%= @game.current_turn.name %> won! 
+<%= @game.not_turn.name %> lost! 
+<% end %>

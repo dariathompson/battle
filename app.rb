@@ -24,15 +24,7 @@ class Battle < Sinatra::Base
     @game = $game
     @game.attack
     erb :attack
-    # if @game.not_turn.hit_points == 0
-    #   redirect '/get'
-    # end
   end
-
-  # get '/end' do
-  #   @game = $game
-  #   erb :end
-  # end
 
   run! if app_file == $0
   

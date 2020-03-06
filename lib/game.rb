@@ -21,4 +21,6 @@ class Game
   def not_turn
     @players[@count-1]
   end
+
+
 end
