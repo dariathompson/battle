@@ -10,7 +10,6 @@ class Game
     @players[1]
   end
   def attack
-    
     @players[@count].receive_damage
     @count += 1
     @count = 0 if @count > 1 

@@ -21,19 +21,18 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
-    #count = 1
     @game = $game
-    #if count.even?
-      # count += 1
-      @game.attack#@game.player_2)
-    
-    # else
-    #   count += 1
-    #   @game.attack(@game.player_1) 
-      
-    # end
+    @game.attack
     erb :attack
+    # if @game.not_turn.hit_points == 0
+    #   redirect '/get'
+    # end
   end
+
+  # get '/end' do
+  #   @game = $game
+  #   erb :end
+  # end
 
   run! if app_file == $0
   

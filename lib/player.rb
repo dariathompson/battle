@@ -7,7 +7,6 @@ class Player
     @hit_points = DEFAULT_HIT_POINTS
   end
 
-
   def receive_damage
     @hit_points -= 10
   end
